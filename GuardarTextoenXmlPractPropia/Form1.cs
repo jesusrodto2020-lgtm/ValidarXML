@@ -42,7 +42,8 @@ namespace GuardarTextoenXmlPractPropia
                     XElement contenido = xml.Element("Archivo")?.Element("Contenido");
 
                     if (contenido != null)
-                        lblTextoGuardado.Text = contenido.Value;
+                        
+                        txtTextoEscrito.Text = contenido.Value;
                     else
                         MessageBox.Show("El archivo XML no contiene texto.");
                 }

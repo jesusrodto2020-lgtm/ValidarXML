@@ -31,7 +31,6 @@
             btnGuardarTexto = new Button();
             btnMostrarTextoGuardado = new Button();
             txtTextoEscrito = new TextBox();
-            lblTextoGuardado = new Label();
             SuspendLayout();
             // 
             // btnGuardarTexto
@@ -56,26 +55,17 @@
             // 
             // txtTextoEscrito
             // 
-            txtTextoEscrito.Location = new Point(171, 12);
+            txtTextoEscrito.Location = new Point(58, 12);
             txtTextoEscrito.Multiline = true;
             txtTextoEscrito.Name = "txtTextoEscrito";
-            txtTextoEscrito.Size = new Size(415, 203);
+            txtTextoEscrito.Size = new Size(520, 294);
             txtTextoEscrito.TabIndex = 2;
-            // 
-            // lblTextoGuardado
-            // 
-            lblTextoGuardado.Location = new Point(171, 218);
-            lblTextoGuardado.Name = "lblTextoGuardado";
-            lblTextoGuardado.Size = new Size(415, 280);
-            lblTextoGuardado.TabIndex = 3;
-            lblTextoGuardado.Text = "\"Aqui se reflejara el texto\"";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(851, 518);
-            Controls.Add(lblTextoGuardado);
             Controls.Add(txtTextoEscrito);
             Controls.Add(btnMostrarTextoGuardado);
             Controls.Add(btnGuardarTexto);
@@ -90,6 +80,5 @@
         private Button btnGuardarTexto;
         private Button btnMostrarTextoGuardado;
         private TextBox txtTextoEscrito;
-        private Label lblTextoGuardado;
     }
 }
